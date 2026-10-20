@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+release/
+pyi_work/
+__pycache__/
+*.pyc
+*.db
+*.exe
+*.zip
+*.7z
+.env
+.vite/

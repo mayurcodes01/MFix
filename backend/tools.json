@@ -1,0 +1,370 @@
+{
+ "cats": {
+  "1": "Storage and performance",
+  "2": "Error fixing",
+  "3": "Diagnostics",
+  "4": "Advanced cleanup"
+ },
+ "tools": [
+  {
+   "id": "temp_cleaner",
+   "file": "Temp_Cleaner.bat",
+   "cat": 1,
+   "title": "Temp Cleaner",
+   "desc": "Deletes eligible temporary files from Windows and user temp folders. Some files may be in use.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "disk_space_check",
+   "file": "Disk_Space_Check.bat",
+   "cat": 1,
+   "title": "Disk Space Check",
+   "desc": "Displays used and free space on available drives.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "update_cache_cleaner",
+   "file": "Update_Cache_Cleaner.bat",
+   "cat": 1,
+   "title": "Update Cache Cleaner",
+   "desc": "Clears selected Windows Update download cache files. Windows may need to download updates again.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "dns_flush",
+   "file": "DNS_Flush.bat",
+   "cat": 1,
+   "title": "DNS Flush",
+   "desc": "Clears cached DNS lookups to troubleshoot certain website connection problems.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "recycle_bin_cleaner",
+   "file": "Recycle_Bin_Cleaner.bat",
+   "cat": 1,
+   "title": "Recycle Bin Cleaner",
+   "desc": "Empties the Recycle Bin after confirmation. Contents are permanently removed.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "windows_component_cleanup",
+   "file": "Windows_Component_Cleanup.bat",
+   "cat": 1,
+   "title": "Windows Component Cleanup",
+   "desc": "Uses DISM to clean up superseded Windows components where supported.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "system_file_repair",
+   "file": "System_File_Repair.bat",
+   "cat": 2,
+   "title": "System File Repair",
+   "desc": "Runs SFC to scan and repair protected Windows system files.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "dism_image_repair",
+   "file": "DISM_Image_Repair.bat",
+   "cat": 2,
+   "title": "DISM Image Repair",
+   "desc": "Uses DISM to repair the Windows component image.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "disk_error_check",
+   "file": "Disk_Error_Check.bat",
+   "cat": 2,
+   "title": "Disk Error Check",
+   "desc": "Runs an online file system scan to check for disk errors.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "network_reset",
+   "file": "Network_Reset.bat",
+   "cat": 2,
+   "title": "Network Reset",
+   "desc": "Resets selected networking components to troubleshoot connection problems.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "ip_refresh",
+   "file": "IP_Refresh.bat",
+   "cat": 2,
+   "title": "IP Refresh",
+   "desc": "Releases and renews an IP address where supported by the network configuration.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "winsock_repair",
+   "file": "Winsock_Repair.bat",
+   "cat": 2,
+   "title": "Winsock Repair",
+   "desc": "Resets the Winsock catalog to help resolve some network errors.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "windows_update_troubleshooter",
+   "file": "Windows_Update_Troubleshooter.bat",
+   "cat": 2,
+   "title": "Windows Update Troubleshooter",
+   "desc": "Opens built in Windows troubleshooting or update settings.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "audio_service_restart",
+   "file": "Audio_Service_Restart.bat",
+   "cat": 2,
+   "title": "Audio Service Restart",
+   "desc": "Restarts relevant Windows audio services when possible.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "print_spooler_fix",
+   "file": "Print_Spooler_Fix.bat",
+   "cat": 2,
+   "title": "Print Spooler Fix",
+   "desc": "Restarts the print spooler to resolve certain stuck print jobs.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "thumbnail_cache_reset",
+   "file": "Thumbnail_Cache_Reset.bat",
+   "cat": 2,
+   "title": "Thumbnail Cache Reset",
+   "desc": "Rebuilds thumbnail caches when File Explorer previews are missing or incorrect.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "icon_cache_reset",
+   "file": "Icon_Cache_Reset.bat",
+   "cat": 2,
+   "title": "Icon Cache Reset",
+   "desc": "Rebuilds the icon cache when desktop or File Explorer icons appear incorrect.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "file_explorer_restart",
+   "file": "File_Explorer_Restart.bat",
+   "cat": 2,
+   "title": "File Explorer Restart",
+   "desc": "Restarts Windows Explorer if the taskbar or desktop becomes unresponsive.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "dns_and_network_fix",
+   "file": "DNS_And_Network_Fix.bat",
+   "cat": 2,
+   "title": "DNS And Network Fix",
+   "desc": "Combines DNS flushing with selected network diagnostics.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "windows_activation_status",
+   "file": "Windows_Activation_Status.bat",
+   "cat": 2,
+   "title": "Windows Activation Status",
+   "desc": "Displays Windows activation and licensing status.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "startup_apps_report",
+   "file": "Startup_Apps_Report.bat",
+   "cat": 3,
+   "title": "Startup Apps Report",
+   "desc": "Lists common startup locations and entries for review.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "running_processes",
+   "file": "Running_Processes.bat",
+   "cat": 3,
+   "title": "Running Processes",
+   "desc": "Displays running processes and available process information.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "battery_report",
+   "file": "Battery_Report.bat",
+   "cat": 3,
+   "title": "Battery Report",
+   "desc": "Generates a battery health and usage report on supported laptops.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "wifi_report",
+   "file": "WiFi_Report.bat",
+   "cat": 3,
+   "title": "WiFi Report",
+   "desc": "Shows wireless interface status and saved Wi Fi profile names without exposing passwords.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "system_information",
+   "file": "System_Information.bat",
+   "cat": 3,
+   "title": "System Information",
+   "desc": "Displays Windows version, hardware and system information.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "driver_information",
+   "file": "Driver_Information.bat",
+   "cat": 3,
+   "title": "Driver Information",
+   "desc": "Generates a report of installed drivers.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "large_files_search",
+   "file": "Large_Files_Search.bat",
+   "cat": 3,
+   "title": "Large Files Search",
+   "desc": "Helps locate large files for manual review instead of deleting them automatically.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "memory_diagnostic",
+   "file": "Memory_Diagnostic.bat",
+   "cat": 3,
+   "title": "Memory Diagnostic",
+   "desc": "Offers to launch Windows Memory Diagnostic. A restart may be required.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "power_efficiency_report",
+   "file": "Power_Efficiency_Report.bat",
+   "cat": 3,
+   "title": "Power Efficiency Report",
+   "desc": "Generates a power efficiency report where supported.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "event_log_viewer",
+   "file": "Event_Log_Viewer.bat",
+   "cat": 3,
+   "title": "Event Log Viewer",
+   "desc": "Opens Event Viewer to investigate system errors and warnings.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "windows_temp_cleaner",
+   "file": "Windows_Temp_Cleaner.bat",
+   "cat": 4,
+   "title": "Windows Temp Cleaner",
+   "desc": "Cleans eligible files in Windows temporary directories.",
+   "admin": true,
+   "ask": true
+  },
+  {
+   "id": "user_temp_cleaner",
+   "file": "User_Temp_Cleaner.bat",
+   "cat": 4,
+   "title": "User Temp Cleaner",
+   "desc": "Cleans eligible temporary files for the current user.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "delivery_optimization_cleaner",
+   "file": "Delivery_Optimization_Cleaner.bat",
+   "cat": 4,
+   "title": "Delivery Optimization Cleaner",
+   "desc": "Guides the user to Windows cleanup options for the update delivery cache.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "component_store_analysis",
+   "file": "Component_Store_Analysis.bat",
+   "cat": 4,
+   "title": "Component Store Analysis",
+   "desc": "Reports Windows component store cleanup information using DISM.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "storage_sense_settings",
+   "file": "Storage_Sense_Settings.bat",
+   "cat": 4,
+   "title": "Storage Sense Settings",
+   "desc": "Opens Storage Sense settings for automatic cleanup.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "hibernation_control",
+   "file": "Hibernation_Control.bat",
+   "cat": 4,
+   "title": "Hibernation Control",
+   "desc": "Offers a choice to disable hibernation and reclaim space. This affects hibernation and may affect Fast Startup.",
+   "admin": true,
+   "ask": false
+  },
+  {
+   "id": "optimize_drive",
+   "file": "Optimize_Drive.bat",
+   "cat": 4,
+   "title": "Optimize Drive",
+   "desc": "Opens the Windows drive optimization tool.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "clipboard_reset",
+   "file": "Clipboard_Reset.bat",
+   "cat": 4,
+   "title": "Clipboard Reset",
+   "desc": "Clears clipboard contents after confirmation.",
+   "admin": false,
+   "ask": true
+  },
+  {
+   "id": "system_restore_settings",
+   "file": "System_Restore_Settings.bat",
+   "cat": 4,
+   "title": "System Restore Settings",
+   "desc": "Opens System Protection settings to review restore points.",
+   "admin": false,
+   "ask": false
+  },
+  {
+   "id": "maintenance_menu",
+   "file": "Maintenance_Menu.bat",
+   "cat": 4,
+   "title": "Maintenance Menu",
+   "desc": "Provides a menu to launch selected maintenance scripts.",
+   "admin": false,
+   "ask": false
+  }
+ ]
+}
